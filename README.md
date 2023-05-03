@@ -23,6 +23,7 @@
 3.2 Feature selection trials based on top K features (F-clasif, chi-squared) and logits p-value significance
 
 ### Conclusion and Observations:
+
 * As we are performing an imbalanced classification task of credit scoring, Accuracy would not be a good metric to observe. Also, business would bleed more if we wrongly predict defaults as non-defaults; vis-a-vis non-defaults as defaults (Recall of defaults vs Recall of non-defaults), a focus on precision-recall tradeoff for defaults, F1-score and auc-roc should be kept over accuracy.
 
 * Various combinations of the above augmentations were tried, and best performance across the selected classification metrics was observed in the setup with Weight-of-evidence encoding (WOE) + all base features + SMOTEtomek sampling was achieved.
@@ -30,6 +31,7 @@
 * For around 3% loss in overall test-accuracy, we were able to achieve 32% increase in Recall for default-class with 6% drop in precision, achieve 10% increase in Precision for non-default class with 15% drop in Recall. Overall a 2% increase in overall macro-F1 score and 0.5 basis-points increase in Auc-roc metric
 
 ## Assigned Task
+
 In this exercise, we ask you to improve the performance of this model using data augmentation.
 
 To do that, we’ll ask you to
