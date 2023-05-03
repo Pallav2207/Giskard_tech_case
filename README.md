@@ -1,7 +1,9 @@
 # Giskard_tech_case
 
 ## Summary
+
 ### Data Augmentations performed :
+
 1. Feature Engineering :
 
 1.1 Categorical Encoding changed from Onehot to Target-encoding (WOE encoding)
